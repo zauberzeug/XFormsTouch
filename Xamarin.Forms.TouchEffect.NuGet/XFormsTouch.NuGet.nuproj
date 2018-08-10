@@ -30,11 +30,11 @@
   <ItemGroup>
     <ProjectReference Include="..\Xamarin.Forms.TouchEffect.Android\Xamarin.Forms.TouchEffect.Android.csproj">
       <Project>{980421FB-7602-4835-B67E-80400B620D55}</Project>
-      <Name>Xamarin.Forms.TouchEffect.Android</Name>
+      <Name>XFormsTouch.Droid</Name>
     </ProjectReference>
     <ProjectReference Include="..\Xamarin.Forms.TouchEffect.iOS\Xamarin.Forms.TouchEffect.iOS.csproj">
       <Project>{F82D71F8-D94C-43FF-8215-F86E1C024A21}</Project>
-      <Name>Xamarin.Forms.TouchEffect.iOS</Name>
+      <Name>XFormsTouch.iOS</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
