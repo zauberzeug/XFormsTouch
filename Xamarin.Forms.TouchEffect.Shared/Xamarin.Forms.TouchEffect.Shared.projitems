@@ -8,4 +8,10 @@
   <PropertyGroup Label="Configuration">
     <Import_RootNamespace>Xamarin.Forms.TouchEffect</Import_RootNamespace>
   </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)TouchActionEventArgs.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TouchActionEventHandler.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TouchActionType.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TouchEffect.cs" />
+  </ItemGroup>
 </Project>
