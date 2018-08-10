@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.props" Condition="Exists('$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CFE5310E-2FC4-4CC7-BA43-29221A874FDE}</ProjectGuid>
+    <Description>Xamarin.Forms.TouchEffect</Description>
+    <PackageId>Xamarin.Forms.TouchEffect</PackageId>
+    <PackageVersion>1.0.0</PackageVersion>
+    <Authors>rodja</Authors>
+    <DevelopmentDependency>false</DevelopmentDependency>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Xamarin.Forms.TouchEffect</RootNamespace>
+    <UsePartialTypes>false</UsePartialTypes>
+    <AssemblyName>Xamarin.Forms.TouchEffect.NuGet</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <OutputPath>bin\Debug</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Xamarin.Forms.TouchEffect.Android\Xamarin.Forms.TouchEffect.Android.csproj">
+      <Project>{980421FB-7602-4835-B67E-80400B620D55}</Project>
+      <Name>Xamarin.Forms.TouchEffect.Android</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xamarin.Forms.TouchEffect.iOS\Xamarin.Forms.TouchEffect.iOS.csproj">
+      <Project>{F82D71F8-D94C-43FF-8215-F86E1C024A21}</Project>
+      <Name>Xamarin.Forms.TouchEffect.iOS</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="NuGet.Build.Packaging">
+      <Version>0.2.0</Version>
+      <PrivateAssets>All</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.Common.targets" />
+  <Import Project="$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.targets" Condition="Exists('$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.targets')" />
+</Project>

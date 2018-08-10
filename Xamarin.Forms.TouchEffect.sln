@@ -1,0 +1,31 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Xamarin.Forms.TouchEffect.Shared", "Xamarin.Forms.TouchEffect.Shared\Xamarin.Forms.TouchEffect.Shared.shproj", "{9D098589-01D0-4565-9F84-3CD2BB39FAA6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.Forms.TouchEffect.iOS", "Xamarin.Forms.TouchEffect.iOS\Xamarin.Forms.TouchEffect.iOS.csproj", "{F82D71F8-D94C-43FF-8215-F86E1C024A21}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.Forms.TouchEffect.Android", "Xamarin.Forms.TouchEffect.Android\Xamarin.Forms.TouchEffect.Android.csproj", "{980421FB-7602-4835-B67E-80400B620D55}"
+EndProject
+Project("{5DD5E4FA-CB73-4610-85AB-557B54E96AA9}") = "Xamarin.Forms.TouchEffect.NuGet", "Xamarin.Forms.TouchEffect.NuGet\Xamarin.Forms.TouchEffect.NuGet.nuproj", "{CFE5310E-2FC4-4CC7-BA43-29221A874FDE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F82D71F8-D94C-43FF-8215-F86E1C024A21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F82D71F8-D94C-43FF-8215-F86E1C024A21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F82D71F8-D94C-43FF-8215-F86E1C024A21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F82D71F8-D94C-43FF-8215-F86E1C024A21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{980421FB-7602-4835-B67E-80400B620D55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{980421FB-7602-4835-B67E-80400B620D55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{980421FB-7602-4835-B67E-80400B620D55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{980421FB-7602-4835-B67E-80400B620D55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFE5310E-2FC4-4CC7-BA43-29221A874FDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFE5310E-2FC4-4CC7-BA43-29221A874FDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFE5310E-2FC4-4CC7-BA43-29221A874FDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFE5310E-2FC4-4CC7-BA43-29221A874FDE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
