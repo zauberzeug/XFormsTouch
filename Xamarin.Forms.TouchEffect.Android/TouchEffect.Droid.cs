@@ -7,7 +7,7 @@ using Xamarin.Forms.Platform.Android;
 
 using Android.Views;
 
-[assembly: ResolutionGroupName("XamarinDocs")]
+[assembly: ResolutionGroupName("XFormsTouch")]
 [assembly: ExportEffect(typeof(XFormsTouch.Droid.TouchEffectDroid), "TouchEffect")]
 
 namespace XFormsTouch.Droid
