@@ -22,6 +22,11 @@ This is just a handy NuGet package around the Xamarin Sample Code to use the Tou
     <AssemblyName>XFormsTouch.NuGet</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <Copyright>Perpetual Mobile GmbH</Copyright>
+    <PackageTags>Xamarin.Forms, XForms, Touch, Effect, GestureRecognizer, Gestures</PackageTags>
+    <Title>Xamarin.Forms TouchEffect</Title>
+    <Summary>Touch event notifications for Android and iOS via Xamarin.Forms Effect.</Summary>
+    <PackageProjectUrl>https://github.com/perpetual-mobile/XFormsTouch</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/perpetual-mobile/XFormsTouch/LICENSE</PackageLicenseUrl>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -41,6 +46,10 @@ This is just a handy NuGet package around the Xamarin Sample Code to use the Tou
     <ProjectReference Include="..\XFormsTouch.iOS\XFormsTouch.iOS.csproj">
       <Project>{F82D71F8-D94C-43FF-8215-F86E1C024A21}</Project>
       <Name>XFormsTouch.iOS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\XFormsTouch.Net\XFormsTouch.Net.csproj">
+      <Project>{62CFD360-F1DD-4482-BF07-C24B8BA2136E}</Project>
+      <Name>XFormsTouch.Net</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
