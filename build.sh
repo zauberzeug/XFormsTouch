@@ -1,4 +1,4 @@
-  #!/bin/bash
+#!/bin/bash
 set -x
 
 if [[ $(git status -s) ]]; then
@@ -17,14 +17,10 @@ XAMARIN_TOOLS=/Library/Frameworks/Mono.framework/Versions/Current/Commands/
 NUGET="$XAMARIN_TOOLS/nuget"
 
 function publishNuGet {
-#  git add $1
-#  git commit -am "nuget package ${VERSION}" || exit 1
   git tag -a $VERSION -m ''  || exit 1
+  git push --tags || exit 1
 
-#  git push
-  git push --tags
-
-  nuget push $1 -Source https://www.nuget.org/api/v2/package
+  nuget push $1 -Source https://www.nuget.org/api/v2/package || exit 1
 }
 
 rm -r XFormsTouch.NuGet/bin/Release/
@@ -33,4 +29,4 @@ $NUGET restore XFormsTouch.sln || exit 1
 sed -i '' "s/\(<PackageVersion>\).*\(<\/PackageVersion>\)/\1$VERSION\2/" XFormsTouch.NuGet/XFormsTouch.NuGet.nuproj
 msbuild /p:Configuration=Release XFormsTouch.NuGet/XFormsTouch.NuGet.nuproj || exit 1
 
-#publishNuGet XFormsTouch.NuGet/bin/Release/XFormsTouch.*.nupk
+publishNuGet XFormsTouch.NuGet/bin/Release/XFormsTouch.*.nupk
