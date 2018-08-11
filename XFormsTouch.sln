@@ -17,7 +17,7 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Sample", "Sample\Sample.shp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XFormsTouch.Net", "XFormsTouch.Net\XFormsTouch.Net.csproj", "{62CFD360-F1DD-4482-BF07-C24B8BA2136E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XFormsTouch.netstandard2", "XFormsTouch.netstandard2\XFormsTouch.netstandard2.csproj", "{DCD047B5-38C2-4CA6-8EF0-1C3721F1E02B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XFormsTouch.netstandard", "XFormsTouch.netstandard2\XFormsTouch.netstandard.csproj", "{DCD047B5-38C2-4CA6-8EF0-1C3721F1E02B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
