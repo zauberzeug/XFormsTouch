@@ -11,7 +11,7 @@ namespace Sample
             var label = new Label() { Text = "XFormsTouch", Margin = new Thickness(20, 50), };
 
             var touchEffect = new TouchEffect();
-            touchEffect.TouchAction += (s, e) => label.Text = e.Id.ToString("f");
+            touchEffect.TouchAction += (s, e) => label.Text = e.Type.ToString("f");
 
 
             label.Effects.Add(touchEffect);

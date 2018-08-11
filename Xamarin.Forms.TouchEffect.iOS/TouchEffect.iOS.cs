@@ -28,6 +28,7 @@ namespace XFormsTouch.iOS
             {
                 // Create a TouchRecognizer for this UIView
                 touchRecognizer = new TouchRecognizer(Element, view, effect);
+                view.UserInteractionEnabled = true;
                 view.AddGestureRecognizer(touchRecognizer);
             }
         }
