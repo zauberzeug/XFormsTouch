@@ -25,6 +25,7 @@ function publishNuGet {
 
 rm -r XFormsTouch.NuGet/bin/Release/
 $NUGET restore XFormsTouch.sln || exit 1
+$NUGET restore XFormsTouch.netstandard2/XFormsTouch.netstandard2.csproj || exit 1
 
 sed -i '' "s/\(<PackageVersion>\).*\(<\/PackageVersion>\)/\1$VERSION\2/" XFormsTouch.NuGet/XFormsTouch.NuGet.nuproj
 msbuild /p:Configuration=Release XFormsTouch.NuGet/XFormsTouch.NuGet.nuproj || exit 1
