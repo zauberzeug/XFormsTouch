@@ -5,17 +5,23 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{CFE5310E-2FC4-4CC7-BA43-29221A874FDE}</ProjectGuid>
-    <Description>XFormsTouch</Description>
+    <Description>XFormsTouch: provides touch event notifications for Android and iOS via Xamarin.Forms Effect.
+
+The code is copied from https://github.com/xamarin/xamarin-forms-samples/tree/master/Effects/TouchTrackingEffect and adapted to be used as a separate library.
+Xamarin explains how it works at https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/effects/touch-tracking.
+
+This is just a handy NuGet package around the Xamarin Sample Code to use the TouchEffect in other projects.</Description>
     <PackageId>XFormsTouch</PackageId>
-    <PackageVersion>1.0.0</PackageVersion>
-    <Authors>rodja</Authors>
+    <PackageVersion>0.9.0</PackageVersion>
+    <Authors>Perpetual Mobile GmbH</Authors>
     <DevelopmentDependency>false</DevelopmentDependency>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <OutputType>Exe</OutputType>
     <RootNamespace>XFormsTouch</RootNamespace>
     <UsePartialTypes>false</UsePartialTypes>
     <AssemblyName>XFormsTouch.NuGet</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <Copyright>Perpetual Mobile GmbH</Copyright>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -39,7 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="NuGet.Build.Packaging">
-      <Version>0.2.0</Version>
+      <Version>0.2.2</Version>
       <PrivateAssets>All</PrivateAssets>
     </PackageReference>
   </ItemGroup>
