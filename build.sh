@@ -29,4 +29,4 @@ $NUGET restore XFormsTouch.sln || exit 1
 sed -i '' "s/\(<PackageVersion>\).*\(<\/PackageVersion>\)/\1$VERSION\2/" XFormsTouch.NuGet/XFormsTouch.NuGet.nuproj
 msbuild /p:Configuration=Release XFormsTouch.NuGet/XFormsTouch.NuGet.nuproj || exit 1
 
-publishNuGet XFormsTouch.NuGet/bin/Release/XFormsTouch.*.nupk
+publishNuGet XFormsTouch.NuGet/bin/Release/XFormsTouch.*.nupkg
