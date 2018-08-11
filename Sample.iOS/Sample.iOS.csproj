@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{6E70494C-23BB-43CC-A4F1-EA409CBC9203}</ProjectGuid>
+    <ProjectGuid>{898F65D5-F150-40D2-95F7-D6ADE62E6B33}</ProjectGuid>
     <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TemplateGuid>{6143fdea-f3c2-4a09-aafa-6e230626515e}</TemplateGuid>
     <OutputType>Exe</OutputType>
@@ -152,14 +152,11 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Sample\Sample.csproj">
-      <Project>{92601080-49AC-4135-A6B2-A48A8029CA3C}</Project>
-      <Name>Sample</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Xamarin.Forms.TouchEffect.iOS\XFormsTouch.iOS.csproj">
       <Project>{F82D71F8-D94C-43FF-8215-F86E1C024A21}</Project>
       <Name>XFormsTouch.iOS</Name>
     </ProjectReference>
   </ItemGroup>
+  <Import Project="..\Sample\Sample.projitems" Label="Shared" Condition="Exists('..\Sample\Sample.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B1166156-B49A-4758-9816-4CF58629640F}</ProjectGuid>
+    <ProjectGuid>{560FF9F1-ED44-487C-8A58-C155B51CCF22}</ProjectGuid>
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TemplateGuid>{c9e5eea5-ca05-42a1-839b-61506e0a37df}</TemplateGuid>
     <OutputType>Library</OutputType>
@@ -93,14 +93,11 @@
     <Folder Include="Resources\drawable-xxxhdpi\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Sample\Sample.csproj">
-      <Project>{92601080-49AC-4135-A6B2-A48A8029CA3C}</Project>
-      <Name>Sample</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Xamarin.Forms.TouchEffect.Android\XFormsTouch.Droid.csproj">
       <Project>{980421FB-7602-4835-B67E-80400B620D55}</Project>
       <Name>XFormsTouch.Droid</Name>
     </ProjectReference>
   </ItemGroup>
+  <Import Project="..\Sample\Sample.projitems" Label="Shared" Condition="Exists('..\Sample\Sample.projitems')" />
  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

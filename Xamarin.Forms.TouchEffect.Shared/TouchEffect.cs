@@ -6,11 +6,11 @@ namespace XFormsTouch
     {
         public event TouchActionEventHandler TouchAction;
 
-        public TouchEffect() : base("XamarinDocs.TouchEffect")
+        public TouchEffect() : base("XFormsTouch.TouchEffect")
         {
         }
 
-        public bool Capture { set; get; }
+        public bool Capture { set; get; } = true;
 
         public void OnTouchAction(Element element, TouchActionEventArgs args)
         {

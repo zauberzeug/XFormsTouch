@@ -25,7 +25,7 @@
 	<key>CFBundleDisplayName</key>
 	<string>Sample</string>
 	<key>CFBundleIdentifier</key>
-	<string>de.perpetualmobile.XFormsTouch</string>
+	<string>de.perpetualmobile.Sample</string>
 	<key>CFBundleVersion</key>
 	<string>1.0</string>
 	<key>UILaunchStoryboardName</key>

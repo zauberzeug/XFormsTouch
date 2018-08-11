@@ -6,7 +6,7 @@ using Xamarin.Forms.Platform.iOS;
 
 using UIKit;
 
-[assembly: ResolutionGroupName("XamarinDocs")]
+[assembly: ResolutionGroupName("XFormsTouch")]
 [assembly: ExportEffect(typeof(XFormsTouch.iOS.TouchEffectIOS), "TouchEffect")]
 
 namespace XFormsTouch.iOS
