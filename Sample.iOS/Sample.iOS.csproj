@@ -155,7 +155,7 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Xamarin.Forms.TouchEffect.iOS\XFormsTouch.iOS.csproj">
+    <ProjectReference Include="..\XFormsTouch.iOS\XFormsTouch.iOS.csproj">
       <Project>{F82D71F8-D94C-43FF-8215-F86E1C024A21}</Project>
       <Name>XFormsTouch.iOS</Name>
     </ProjectReference>

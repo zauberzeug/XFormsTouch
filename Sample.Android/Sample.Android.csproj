@@ -93,7 +93,7 @@
     <Folder Include="Resources\drawable-xxxhdpi\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Xamarin.Forms.TouchEffect.Android\XFormsTouch.Droid.csproj">
+    <ProjectReference Include="..\XFormsTouch.Droid\XFormsTouch.Droid.csproj">
       <Project>{980421FB-7602-4835-B67E-80400B620D55}</Project>
       <Name>XFormsTouch.Droid</Name>
     </ProjectReference>

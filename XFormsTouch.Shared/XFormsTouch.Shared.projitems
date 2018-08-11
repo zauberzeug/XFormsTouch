@@ -6,7 +6,7 @@
     <SharedGUID>{9D098589-01D0-4565-9F84-3CD2BB39FAA6}</SharedGUID>
   </PropertyGroup>
   <PropertyGroup Label="Configuration">
-    <Import_RootNamespace>Xamarin.Forms.TouchEffect</Import_RootNamespace>
+    <Import_RootNamespace>XFormsTouch</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)TouchActionEventArgs.cs" />

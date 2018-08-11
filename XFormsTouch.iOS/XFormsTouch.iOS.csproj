@@ -8,8 +8,8 @@
     <ProjectGuid>{F82D71F8-D94C-43FF-8215-F86E1C024A21}</ProjectGuid>
     <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
-    <RootNamespace>Xamarin.Forms.TouchEffect</RootNamespace>
-    <AssemblyName>Xamarin.Forms.TouchEffect</AssemblyName>
+    <RootNamespace>XFormsTouch</RootNamespace>
+    <AssemblyName>XFormsTouch</AssemblyName>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -65,7 +65,7 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <Import Project="..\Xamarin.Forms.TouchEffect.Shared\Xamarin.Forms.TouchEffect.Shared.projitems" Label="Shared" Condition="Exists('..\Xamarin.Forms.TouchEffect.Shared\Xamarin.Forms.TouchEffect.Shared.projitems')" />
+  <Import Project="..\XFormsTouch.Shared\XFormsTouch.Shared.projitems" Label="Shared" Condition="Exists('..\XFormsTouch.Shared\XFormsTouch.Shared.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\packages\NuGet.Build.Packaging.0.2.0\build\NuGet.Build.Packaging.targets" Condition="Exists('..\packages\NuGet.Build.Packaging.0.2.0\build\NuGet.Build.Packaging.targets')" />
   <Import Project="..\packages\Xamarin.Forms.3.1.0.697729\build\netstandard2.0\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.3.1.0.697729\build\netstandard2.0\Xamarin.Forms.targets')" />

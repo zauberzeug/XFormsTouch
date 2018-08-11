@@ -5,16 +5,16 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{CFE5310E-2FC4-4CC7-BA43-29221A874FDE}</ProjectGuid>
-    <Description>Xamarin.Forms.TouchEffect</Description>
-    <PackageId>Xamarin.Forms.TouchEffect</PackageId>
+    <Description>XFormsTouch</Description>
+    <PackageId>XFormsTouch</PackageId>
     <PackageVersion>1.0.0</PackageVersion>
     <Authors>rodja</Authors>
     <DevelopmentDependency>false</DevelopmentDependency>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Xamarin.Forms.TouchEffect</RootNamespace>
+    <RootNamespace>XFormsTouch</RootNamespace>
     <UsePartialTypes>false</UsePartialTypes>
-    <AssemblyName>Xamarin.Forms.TouchEffect.NuGet</AssemblyName>
+    <AssemblyName>XFormsTouch.NuGet</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -28,11 +28,11 @@
     <ErrorReport>prompt</ErrorReport>
   </PropertyGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Xamarin.Forms.TouchEffect.Android\Xamarin.Forms.TouchEffect.Android.csproj">
+    <ProjectReference Include="..\XFormsTouch.Droid\XFormsTouch.Droid.csproj">
       <Project>{980421FB-7602-4835-B67E-80400B620D55}</Project>
       <Name>XFormsTouch.Droid</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Xamarin.Forms.TouchEffect.iOS\Xamarin.Forms.TouchEffect.iOS.csproj">
+    <ProjectReference Include="..\XFormsTouch.iOS\XFormsTouch.iOS.csproj">
       <Project>{F82D71F8-D94C-43FF-8215-F86E1C024A21}</Project>
       <Name>XFormsTouch.iOS</Name>
     </ProjectReference>

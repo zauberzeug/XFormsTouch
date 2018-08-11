@@ -1,13 +1,13 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "XFormsTouch.Shared", "Xamarin.Forms.TouchEffect.Shared\XFormsTouch.Shared.shproj", "{9D098589-01D0-4565-9F84-3CD2BB39FAA6}"
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "XFormsTouch.Shared", "XFormsTouch.Shared\XFormsTouch.Shared.shproj", "{9D098589-01D0-4565-9F84-3CD2BB39FAA6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XFormsTouch.iOS", "Xamarin.Forms.TouchEffect.iOS\XFormsTouch.iOS.csproj", "{F82D71F8-D94C-43FF-8215-F86E1C024A21}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XFormsTouch.iOS", "XFormsTouch.iOS\XFormsTouch.iOS.csproj", "{F82D71F8-D94C-43FF-8215-F86E1C024A21}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XFormsTouch.Droid", "Xamarin.Forms.TouchEffect.Android\XFormsTouch.Droid.csproj", "{980421FB-7602-4835-B67E-80400B620D55}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XFormsTouch.Droid", "XFormsTouch.Droid\XFormsTouch.Droid.csproj", "{980421FB-7602-4835-B67E-80400B620D55}"
 EndProject
-Project("{5DD5E4FA-CB73-4610-85AB-557B54E96AA9}") = "XFormsTouch.NuGet", "Xamarin.Forms.TouchEffect.NuGet\XFormsTouch.NuGet.nuproj", "{CFE5310E-2FC4-4CC7-BA43-29221A874FDE}"
+Project("{5DD5E4FA-CB73-4610-85AB-557B54E96AA9}") = "XFormsTouch.NuGet", "XFormsTouch.NuGet\XFormsTouch.NuGet.nuproj", "{CFE5310E-2FC4-4CC7-BA43-29221A874FDE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample.Android", "Sample.Android\Sample.Android.csproj", "{560FF9F1-ED44-487C-8A58-C155B51CCF22}"
 EndProject
