@@ -12,7 +12,7 @@ Xamarin explains how it works at https://docs.microsoft.com/en-us/xamarin/xamari
 
 This is just a handy NuGet package around the Xamarin Sample Code to use the TouchEffect in other projects.</Description>
     <PackageId>XFormsTouch</PackageId>
-    <PackageVersion>0.9.0</PackageVersion>
+    <PackageVersion>0.9.16</PackageVersion>
     <Authors>Perpetual Mobile GmbH</Authors>
     <DevelopmentDependency>false</DevelopmentDependency>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
@@ -20,7 +20,6 @@ This is just a handy NuGet package around the Xamarin Sample Code to use the Tou
     <RootNamespace>XFormsTouch</RootNamespace>
     <UsePartialTypes>false</UsePartialTypes>
     <AssemblyName>XFormsTouch.NuGet</AssemblyName>
-    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <Copyright>Perpetual Mobile GmbH</Copyright>
     <PackageTags>Xamarin.Forms, XForms, Touch, Effect, GestureRecognizer, Gestures</PackageTags>
     <Title>Xamarin.Forms TouchEffect</Title>
@@ -28,6 +27,10 @@ This is just a handy NuGet package around the Xamarin Sample Code to use the Tou
     <PackageProjectUrl>https://github.com/perpetual-mobile/XFormsTouch</PackageProjectUrl>
     <PackageLicenseUrl>https://github.com/perpetual-mobile/XFormsTouch/LICENSE</PackageLicenseUrl>
     <Owners>Perpetual Mobile GmbH</Owners>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+	   <TargetFrameworks>monoandroid81;xamarinios10;net461</TargetFrameworks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -51,10 +54,6 @@ This is just a handy NuGet package around the Xamarin Sample Code to use the Tou
     <ProjectReference Include="..\XFormsTouch.Net\XFormsTouch.Net.csproj">
       <Project>{62CFD360-F1DD-4482-BF07-C24B8BA2136E}</Project>
       <Name>XFormsTouch.Net</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\XFormsTouch.netstandard2\XFormsTouch.netstandard2.csproj">
-      <Project>{DCD047B5-38C2-4CA6-8EF0-1C3721F1E02B}</Project>
-      <Name>XFormsTouch.netstandard</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
