@@ -6,6 +6,7 @@ using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
 
 using Android.Views;
+using Xamarin.Forms.Internals;
 
 [assembly: ResolutionGroupName("XFormsTouch")]
 [assembly: ExportEffect(typeof(XFormsTouch.Droid.TouchEffectDroid), "TouchEffect")]
@@ -29,28 +30,21 @@ namespace XFormsTouch.Droid
 
         protected override void OnAttached()
         {
-            // Get the Android View corresponding to the Element that the effect is attached to
             view = Control == null ? Container : Control;
 
-            // Get access to the TouchEffect class in the .NET Standard library
-            TouchEffect touchEffect =
-                (TouchEffect)Element.Effects.
-                    FirstOrDefault(e => e is TouchEffect);
+            var touchEffect = (TouchEffect)Element.Effects.FirstOrDefault(e => e is TouchEffect);
 
-            if (touchEffect != null && view != null)
-            {
-                viewDictionary.Add(view, this);
+            if (touchEffect == null || view == null)
+                return;
 
-                formsElement = Element;
+            viewDictionary.Add(view, this);
 
-                libTouchEffect = touchEffect;
+            formsElement = Element;
+            libTouchEffect = touchEffect;
 
-                // Save fromPixels function
-                fromPixels = view.Context.FromPixels;
-
-                // Set event handler on View
-                view.Touch += OnTouch;
-            }
+            fromPixels = view.Context.FromPixels;
+            view.Touch += OnTouch;
+            (Element as Layout<Xamarin.Forms.View>)?.Children.ForEach(v => v.InputTransparent = true);
         }
 
         protected override void OnDetached()
