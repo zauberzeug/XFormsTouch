@@ -1,7 +1,6 @@
 ﻿using System;
 using Xamarin.Forms;
 using XFormsTouch;
-using System.Security.Cryptography;
 
 namespace Sample
 {
@@ -12,11 +11,17 @@ namespace Sample
             var label = new Label()
             {
                 Text = "Touch Me",
-                Margin = new Thickness(20, 50),
+                HorizontalOptions = LayoutOptions.Center,
+                VerticalOptions = LayoutOptions.Center,
+                FontSize = 42
             };
 
             var touchEffect = new TouchEffect();
-            touchEffect.TouchAction += (s, e) => label.Text = e.Type.ToString("f");
+            touchEffect.TouchAction += (s, e) =>
+            {
+                label.Text = e.Type.ToString("f");
+                Console.WriteLine(e.Type.ToString());
+            };
 
             label.Effects.Add(touchEffect);
 
