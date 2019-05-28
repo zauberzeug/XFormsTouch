@@ -59,7 +59,7 @@ namespace XFormsTouch.Droid
             }
             catch (ObjectDisposedException)
             {
-                //TODO This Bug is fixed with XForms 3.6 or higher.  
+                //TODO This Bug is fixed with XForms 3.5 or higher.  
             }
         }
 
