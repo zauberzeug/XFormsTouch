@@ -49,10 +49,17 @@ namespace XFormsTouch.Droid
 
         protected override void OnDetached()
         {
-            if (viewDictionary.ContainsKey(view))
+            try
             {
-                viewDictionary.Remove(view);
-                view.Touch -= OnTouch;
+                if (viewDictionary.ContainsKey(view))
+                {
+                    viewDictionary.Remove(view);
+                    view.Touch -= OnTouch;
+                }
+            }
+            catch (ObjectDisposedException)
+            {
+                //TODO This Bug is fixed with XForms 3.6 or higher.  
             }
         }
 
