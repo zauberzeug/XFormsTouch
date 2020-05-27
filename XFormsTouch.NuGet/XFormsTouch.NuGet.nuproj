@@ -27,7 +27,7 @@ This is just a handy NuGet package around the Xamarin Sample Code to use the Tou
     <PackageProjectUrl>https://github.com/perpetual-mobile/XFormsTouch</PackageProjectUrl>
     <PackageLicenseUrl>https://github.com/perpetual-mobile/XFormsTouch/LICENSE</PackageLicenseUrl>
     <Owners>Perpetual Mobile GmbH</Owners>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup>
 	   <TargetFrameworks>monoandroid81;xamarinios10;net461</TargetFrameworks>
@@ -54,6 +54,10 @@ This is just a handy NuGet package around the Xamarin Sample Code to use the Tou
     <ProjectReference Include="..\XFormsTouch.Net\XFormsTouch.Net.csproj">
       <Project>{62CFD360-F1DD-4482-BF07-C24B8BA2136E}</Project>
       <Name>XFormsTouch.Net</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\XFormsTouch.NetStandard\XFormsTouch.NetStandard.csproj">
+      <Project>{FA07EFE5-46C2-4475-A79E-C3B73BD844C2}</Project>
+      <Name>XFormsTouch.NetStandard</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
